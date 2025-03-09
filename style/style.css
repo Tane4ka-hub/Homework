@@ -73,7 +73,7 @@ header{
     font-family: 'Cera Pro Medium', sans-serif;
 }
 section {
-    margin: 120px;
+    margin: 12px 120px;
     background: rgba(245, 245, 245, 0.50);
 }
 h1 {
@@ -119,12 +119,12 @@ p{
 
 .container {
     display:flex;
+    justify-content: space-between;
 }
 
 .left {
-    float: left;
     width:  50%; 
-    padding: 60px 0 0 20px;
+    padding: 60px 20px;
 
 }
 

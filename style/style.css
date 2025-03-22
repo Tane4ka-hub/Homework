@@ -16,6 +16,18 @@
     font-weight: 700;
 }
 
+@font-face {
+    font-family: 'Encode Sans Expanded Regular';
+    src: url('../fonts/EncodeSansExpanded-Regular.ttf') format(ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Encode Sans Expanded Bold';
+    src: url('../fonts/EncodeSansExpanded-Bold.ttf') format(ttf);
+    font-weight: 700;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -48,6 +60,7 @@ header{
     font-family: 'Cera Pro Regular', sans-serif;
     color: #3D3D3D;
     font-size: 16px;
+    position: relative;
 }
 
 .list-item:hover {
@@ -130,4 +143,65 @@ p{
 
 .right {
     float: right;
+}
+
+.sub-list {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    margin-top: 30px;
+    min-width: 188px;
+}
+
+.list-item:hover > ul {
+    display: block;
+}
+
+.sub-list-item {
+    padding: 7px 0 7px 14px;
+    background: #EDF6EE;
+}
+
+.sub-list-item > a {
+    display: inline-block;
+    color: #3D3D3D;
+    font-family: 'Encode Sans Expanded Regular',sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+}
+
+.sub-list-item-active > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF;
+    font-family: 'Encode Sans Expanded Bold', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    background-color: #1A712A;
+    padding: 7px 17px 7px 14px;
+  
+}
+
+.sub-list-item-active:hover > ul {
+    display: block;
+    left: 150%;
+    margin-top: -72%;
+    margin-left: 2px;
+}
+
+.sub-sublist-item > a {
+    display: inline-block;
+    color: #3D3D3D;
+    font-family: 'Encode Sans Expanded Regular';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }
